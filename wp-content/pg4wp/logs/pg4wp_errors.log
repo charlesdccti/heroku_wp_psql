@@ -1,0 +1,146 @@
+[1588498070.3977] Error running :
+SELECT option_name, option_value FROM wp_options WHERE autoload = 'yes'
+---- converted to ----
+SELECT option_name, option_value FROM wp_options WHERE autoload = 'yes'
+----> ERROR:  relation "wp_options" does not exist
+LINE 1: SELECT option_name, option_value FROM wp_options WHERE autol...
+                                              ^
+---------------------
+[1588498070.3985] Error running :
+SELECT option_name, option_value FROM wp_options
+---- converted to ----
+SELECT option_name, option_value FROM wp_options
+----> ERROR:  relation "wp_options" does not exist
+LINE 1: SELECT option_name, option_value FROM wp_options
+                                              ^
+---------------------
+[1588498070.399] Error running :
+SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+---- converted to ----
+SELECT option_value FROM wp_options WHERE option_name = 'siteurl'
+----> ERROR:  relation "wp_options" does not exist
+LINE 1: SELECT option_value FROM wp_options WHERE option_name = 'sit...
+                                 ^
+---------------------
+[1588498214.7745] Error running :
+DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498214
+---- converted to ----
+DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498214
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions ...
+               ^
+---------------------
+[1588498214.7749] Error running :
+DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498214
+---- converted to ----
+DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498214
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfoliooptions a, wp_portfoliooptions ...
+               ^
+---------------------
+[1588498309.6574] Error running :
+SELECT option_name, option_value FROM wp_portfolio_options WHERE autoload = 'yes'
+---- converted to ----
+SELECT option_name, option_value FROM wp_portfolio_options WHERE autoload = 'yes'
+----> ERROR:  relation "wp_portfolio_options" does not exist
+LINE 1: SELECT option_name, option_value FROM wp_portfolio_options W...
+                                              ^
+---------------------
+[1588498309.658] Error running :
+SELECT option_name, option_value FROM wp_portfolio_options
+---- converted to ----
+SELECT option_name, option_value FROM wp_portfolio_options
+----> ERROR:  relation "wp_portfolio_options" does not exist
+LINE 1: SELECT option_name, option_value FROM wp_portfolio_options
+                                              ^
+---------------------
+[1588498309.6586] Error running :
+SELECT option_value FROM wp_portfolio_options WHERE option_name = 'siteurl'
+---- converted to ----
+SELECT option_value FROM wp_portfolio_options WHERE option_name = 'siteurl'
+----> ERROR:  relation "wp_portfolio_options" does not exist
+LINE 1: SELECT option_value FROM wp_portfolio_options WHERE option_n...
+                                 ^
+---------------------
+[1588498344.9356] Error running :
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498344
+---- converted to ----
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498344
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfolio_options a, wp_portfolio_option...
+               ^
+---------------------
+[1588498344.9362] Error running :
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498344
+---- converted to ----
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498344
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfolio_options a, wp_portfolio_option...
+               ^
+---------------------
+[1588498404.0721] Error creating MySQL-compatible field function: ERROR:  tuple concurrently updated
+[1588498404.0721] Error creating MySQL-compatible field function: ERROR:  tuple concurrently updated
+[1588498404.1694] Error running :
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498404
+---- converted to ----
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+			WHERE a.option_name LIKE '\_transient\_%'
+			AND a.option_name NOT LIKE '\_transient\_timeout\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1588498404
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfolio_options a, wp_portfolio_option...
+               ^
+---------------------
+[1588498404.1699] Error running :
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498404
+---- converted to ----
+DELETE a, b FROM wp_portfolio_options a, wp_portfolio_options b
+				WHERE a.option_name LIKE '\_site\_transient\_%'
+				AND a.option_name NOT LIKE '\_site\_transient\_timeout\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1588498404
+----> ERROR:  syntax error at or near "a"
+LINE 1: DELETE a, b FROM wp_portfolio_options a, wp_portfolio_option...
+               ^
+---------------------
