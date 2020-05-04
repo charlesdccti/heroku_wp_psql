@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'portfolio' );
+define( 'DB_NAME', 'd75o913j65n9ht' );
 
 /** MySQL database username */
-define( 'DB_USER', 'postgres' );
+define( 'DB_USER', 'rtowfbglptazwi' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'postgres' );
+define( 'DB_PASSWORD', '6f164e4c34450af735ce0ce965fda2851a2ab7615a17e37d4ddf7a78926ca8e0' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'ec2-46-137-84-140.eu-west-1.compute.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -63,7 +63,7 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_portfolio_';
+$table_prefix = 'wp_deduar_';
 
 /**
  * For developers: WordPress debugging mode.
